@@ -683,26 +683,26 @@ UI_HTML = """
 <meta charset="UTF-8" />
 <title>Placement-Ready AI Career Agent</title>
 <style>
-  :root { --accent:#4f46e5; --bg:#f5f6fa; --card:#ffffff; --text:#1c1e2b; --muted:#6b7086; --border:#e2e4ee; }
+  :root { --accent:#4f46e5; --bg:#0f1220; --card:#171a2b; --text:#e8e9f3; --muted:#9a9db8; }
   * { box-sizing: border-box; }
   body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); margin:0; padding: 32px 16px; }
   .wrap { max-width: 760px; margin: 0 auto; }
   h1 { font-size: 22px; margin-bottom: 4px; }
   p.sub { color: var(--muted); margin-top: 0; margin-bottom: 24px; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .card { background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 20px; }
   label { display:block; font-size: 13px; color: var(--muted); margin-bottom: 6px; margin-top: 16px; }
-  input[type=text], input[type=file] { width:100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); background:#fff; color: var(--text); }
+  input[type=text], input[type=file] { width:100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #2a2e45; background:#12142200; background:#0f1120; color: var(--text); }
   button { margin-top: 22px; width:100%; padding: 12px; border:none; border-radius: 8px; background: var(--accent); color:white; font-weight:600; cursor:pointer; font-size:15px; }
   button:disabled { opacity:0.6; cursor:default; }
   .section-title { font-weight:700; margin-top: 20px; margin-bottom:8px; color:var(--accent); }
   .skill-tag { display:inline-block; padding:3px 9px; border-radius: 999px; font-size:12px; margin:2px; }
-  .matched { background:#dcfce7; color:#166534; }
-  .partial { background:#fef3c7; color:#92400e; }
-  .missing { background:#fee2e2; color:#991b1b; }
+  .matched { background:#14532d; color:#bbf7d0; }
+  .partial { background:#713f12; color:#fde68a; }
+  .missing { background:#7f1d1d; color:#fecaca; }
   .score { font-size: 40px; font-weight:800; color: var(--accent); }
-  .project { border:1px solid var(--border); border-radius:10px; padding:14px; margin-bottom:10px; }
+  .project { border:1px solid #2a2e45; border-radius:10px; padding:14px; margin-bottom:10px; }
   .muted { color: var(--muted); font-size: 13px; }
-  #error { color:#dc2626; margin-top:10px; }
+  #error { color:#fca5a5; margin-top:10px; }
 </style>
 </head>
 <body>
@@ -720,7 +720,7 @@ UI_HTML = """
     <label>3. GitHub Username (optional)</label>
     <input type="text" id="github_username" placeholder="username" />
 
-    <button id="analyzeBtn" onclick="analyze()">4. ANALYZE RESUME</button>
+    <button id="analyzeBtn" onclick="analyze()">ANALYZE RESUME</button>
     <div id="error"></div>
   </div>
 
